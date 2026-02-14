@@ -1,8 +1,61 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>{{title}}</title>
+  <meta name="description" content="{{description}}" />
+
+  <style>
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Arial;
+      background: #0b0f17;
+      color: #e7eefc;
+    }
+
+    a { color: #7aa7ff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .wrap {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 32px 18px;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 16px;
+      padding: 18px;
+      margin-top: 16px;
+      backdrop-filter: blur(6px);
+    }
+
+    .row {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .pill {
+      display: inline-block;
+      padding: 6px 10px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,0.18);
+      background: rgba(255,255,255,0.06);
+      font-size: 13px;
+      margin-right: 8px;
+      margin-bottom: 8px;
+    }
+
+    code {
+      background: rgba(255,255,255,0.08);
+      padding: 2px 6px;
+      border-radius: 8px;
+    }
+  </style>
 </head>
 <body>
   <div id="root">{{content}}</div>

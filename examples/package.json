@@ -1,0 +1,25 @@
+{
+  "name": "domainex-example",
+  "version": "1.0.0",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "build": "node build.js",
+    "dev:express": "node build.js && node server.js express",
+    "dev:standalone": "node build.js && node server.js standalone",
+    "watch": "node build.js && node --watch server.js express"
+  },
+  "dependencies": {
+    "@vue/server-renderer": "^3.5.13",
+    "express": "^4.19.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "vue": "^3.5.13"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.26.9",
+    "@babel/preset-env": "^7.26.9",
+    "@babel/preset-react": "^7.26.3",
+    "@vue/compiler-sfc": "^3.5.13"
+  }
+}
