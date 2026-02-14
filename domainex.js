@@ -349,10 +349,6 @@ class DomainEx {
     return html;
   }
 
-  /**
-   * Generate a cache key for a component with props
-   * @private
-   */
   _generateCacheKey(componentName, props) {
     return `${componentName}:${JSON.stringify(props)}`;
   }
